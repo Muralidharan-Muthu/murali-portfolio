@@ -23,7 +23,7 @@ const EducationCard = ({ education }) => {
       iconStyle={{ background: education.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <p className="text-white text-[18px] font-bold">
+          <p className="text-white xl:text-[18px] text-[16px] font-bold">
             {education.percentage}%
           </p>
         </div>
