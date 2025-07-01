@@ -3,26 +3,20 @@ import {
   backend,
   creator,
   web,
+  python,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  imagegenerator,
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +25,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -42,11 +36,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Python Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -54,12 +48,16 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Figma Designer",
     icon: creator,
   },
 ];
 
 const technologies = [
+  {
+    name: "Python",
+    icon: python,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -79,10 +77,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -114,93 +108,74 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const educations = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Bachelor of Computer Science Engineering",
+    school: "Krishnasamy College of Engineering and Technology",
+    percentage: "83",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Nov 2022 -  Apr 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed my core knowlegdes in computer science.",
+      "i have gained knowledge in DBMS, OOPS, Data Structures and Algorithms, and Networking.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Higher Secondary Education",
+    school: "Seventh Day Adventist Higher Secondary School",
+    percentage: "76",
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 2020 - June 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I have developed my knowlegdes in Python Programming Language.",
+      "I was scored 98% in Python.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Secondary Education",
+    school: "Shree Maedha Matriculation School",
+    percentage: "72",
+    iconBg: "#383E56",
+    date: "June 2019 -  June 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Practiced my disciplines and well manners.",
+      "Started reading books and self improvement guides.",
     ],
   },
 ];
 
-const testimonials = [
+const certificates = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "Python Programming",
+    issuer: "Coursera",
+    date: "2023",
+    description: "Completed comprehensive Python programming course covering data structures, algorithms, and object-oriented programming.",
+    image: "https://img.icons8.com/color/96/000000/python.png",
+    link: "#",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    title: "React.js Development",
+    issuer: "Udemy",
+    date: "2023",
+    description: "Mastered React.js fundamentals including hooks, state management, and component lifecycle.",
+    image: "https://img.icons8.com/color/96/000000/react-native.png",
+    link: "#",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "Web Development Internship",
+    issuer: "Tech Solutions Inc.",
+    date: "2023",
+    description: "6-month internship working on real-world web development projects using modern technologies.",
+    image: "https://img.icons8.com/color/96/000000/internship.png",
+    link: "#",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Imagify",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to make their own images with AI. It is a web application that allows users to upload their prompt and create powerfull image based on that promp.",
     tags: [
       {
         name: "react",
@@ -215,51 +190,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: imagegenerator,
+    source_code_link: "https://github.com/Muralidharan-Muthu/text-to-image-generator-application-IMAGIFY",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, educations, certificates, projects };
