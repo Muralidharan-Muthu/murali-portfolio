@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import leetcode from "./leetcode.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -24,6 +25,7 @@ import python from "./tech/python.png"
 import imagegenerator from "./imagegenerator.png"
 
 export {
+  leetcode,
   logo,
   backend,
   creator,
