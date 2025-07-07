@@ -12,8 +12,8 @@ const Hero = () => {
           <div className='w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 h-20 sm:h-32 md:h-40 lg:h-60 violet-gradient' />
         </div>
-        
-        <div className="flex-1 min-w-0 flex flex-col justify-center space-y-4 sm:space-y-6 lg:space-y-8">
+
+        <div className="flex-1 min-w-0 flex flex-col justify-center space-y-6 lg:space-y-8">
           {/* Main Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -29,9 +29,9 @@ const Hero = () => {
               interfaces with modern technologies.
             </p>
           </motion.div>
-          
+
           {/* Quick Stats */}
-          <motion.div 
+          <motion.div
             className="flex flex-wrap gap-3 sm:gap-4 lg:gap-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Call-to-Action Buttons */}
-          <motion.div 
+          <motion.div
             className="flex flex-wrap gap-2 sm:gap-3 lg:gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,24 +69,24 @@ const Hero = () => {
           </motion.div>
 
           {/* LeetCode Section */}
-          <motion.div 
-            className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 lg:gap-4"
+          <motion.div
+            className="flex sm:justify-start justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            
             <a
               href="https://leetcode.com/u/Fu1oh1JmRO/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-shrink-0 text-blue-400 hover:scale-110 transition-transform bg-tertiary py-2 sm:py-3 px-2 sm:px-3 rounded-xl shadow-md shadow-primary flex items-center justify-center gap-4"
+              className="flex-shrink-0 text-blue-400 hover:scale-110 transition-transform bg-tertiary py-2 sm:py-3 px-4 sm:px-3 rounded-xl shadow-md shadow-primary flex items-center justify-center gap-4"
               title="LeetCode Profile"
             >
               <span className="text-white-100 text-lg sm:text-xl font-medium flex-shrink-0">LeetCode Profile </span>
-              <img src={leetcode} alt="LeetCode" className="w-6 h-6 sm:w-8 sm:h-8 bg-[#915EFF] rounded-full p-1.5" />
+              <div className="flex items-center justify-center bg-[#915EFF] w-8 h-8 rounded-full p-1.5">
+                <img src={leetcode} alt="LeetCode" className="w-6 h-6" />
+              </div>
             </a>
-            
           </motion.div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
   Decal,
   Float,
+  OrbitControls,
   Preload,
   useTexture,
 } from "@react-three/drei";
@@ -33,6 +34,11 @@ const Ball = (props) => {
     <Float speed={2.5} rotationIntensity={2} floatIntensity={2.5}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
+      <OrbitControls 
+        enableZoom={false}
+        enablePan={false}
+        
+      />
       <mesh castShadow receiveShadow scale={2.75} ref={meshRef}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
